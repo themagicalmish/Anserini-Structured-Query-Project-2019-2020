@@ -90,7 +90,16 @@ public class StructuredReranker {
         }
 
 
-         */ // UNCOMMENT !!!!
+         */
+
+        // here, the size of robust04 is hardcoded...
+        // this is much easier than having the above code manually
+        // counting the total size of the corpus at runtime.
+        //
+        // there is supposed to be a statistic built into the index object
+        // however whenever I tried to use it, zero or null was returned.
+        // so pls replace this code with a call to that method if you know
+        // what it is and it works
         return 240634932;
     }
     public SimpleSearcher.Result[] rerank_simple_results_basic_dirichlet(
